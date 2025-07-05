@@ -1,0 +1,16 @@
+.Navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: #0A0D1F;
+  padding: 20px;
+  gap: 100px;
+  margin-left: -100;
+  padding: 30px;
+  border-radius: 100px;
+  border: none;
+}
+
+.Navbar:hover{
+  color: #6689FF;
+}
+

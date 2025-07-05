@@ -1,0 +1,64 @@
+.tech-icon {
+    position: relative;
+    font-size: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    color: #4C75FF;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -1.8rem; /* 🠈 this moves it above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }  
+  
+  .tech-icon:hover .tooltip {
+    opacity: 1;
+  }
+
+  .tech-stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* 🠈 Increase gap */
+    margin-top: 3rem;
+    padding: 1rem;
+  }  
+  
+  .tech-stack-section {
+    margin-top: 0;
+    padding-top: 0.5rem;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, #00FFFF, #6689FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+  
