@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         <Background />
         <Navbar />
         <Home />
-        <TechStack />
+        <TechStack></TechStack>
       </>
     )
   },
