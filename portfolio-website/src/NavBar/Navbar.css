@@ -1,23 +1,27 @@
-.btn{
-    color: #A7ADBE;
-    background-color: #0A0D1F;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    font-weight: 2px;
-    justify-content: center;
-    align-self: center;
-    text-decoration: none;
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: medium;
-    transition: transform 0.2s ease, color 0.2s ease;
+.btn {
+  color: #A7ADBE;
+  background-color: #0A0D1F;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Rethink Sans', sans-serif;
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding: 10px 16px;
+  cursor: pointer;
 }
 
-.Navbar{
-  position: fixed; /* or sticky if preferred */
+.btn:hover {
+  color: #6689FF;
+  transform: scale(1.2);
+}
+
+/* Main Navbar */
+.Navbar {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* FULL width */
+  width: 100vw;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -25,16 +29,11 @@
   padding: 20px 0;
   border-radius: 50px;
   z-index: 999;
-  height: 110px; /* Set fixed height */
+  height: 110px;
   box-sizing: border-box;
 }
 
-.btn:hover{
-    color: #6689FF;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
+/* Home Section */
 .home-container {
   display: flex;
   align-items: center;
@@ -47,26 +46,29 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   flex-wrap: wrap;
   max-width: 1000px;
-  margin: 50px auto;
-  margin-top: 23%;
+  margin: 130px auto 50px auto; /* adjusted top margin to avoid overlap */
 }
 
+/* Text Column */
 .home-text {
   flex: 1;
   min-width: 280px;
 }
 
+/* Title Text */
 .home-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
 }
 
+/* Subtext */
 .home-text p {
   font-size: 1.2rem;
   color: #a7adbe;
 }
 
+/* Image Column */
 .home-image {
   flex: 1;
   min-width: 280px;
@@ -88,19 +90,38 @@
   transform: scale(1.05);
 }
 
+/* ✅ Mobile Optimized Styles */
 @media (max-width: 768px) {
+  .Navbar {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 12px 0;
+    height: auto;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
   .home-container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .home-text,
-  .home-image {
-    width: 100%;
+    margin-top: 150px; /* pushed lower for mobile */
+    padding: 2rem 1rem;
   }
 
   .home-image img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
   }
 }
