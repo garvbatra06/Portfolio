@@ -7,28 +7,28 @@ const projects = [
     description:
       'This very portfolio — built to showcase my journey, skills, and projects as I explore web dev and AI.',
     tech: ['React', 'Framer Motion', 'CSS'],
-    link: '#',
+    link: 'https://garvbatra.onrender.com/',
   },
   {
     title: 'Eminence Website',
     description:
       'A professional event website for Eminence by JBS, showcasing speakers, innovation reports, and updates.',
     tech: ['Framer'],
-    link: '#',
+    link: 'https://eminence-jiit.framer.website/',
   },
   {
     title: 'The Consulting Club Website',
     description:
       'Official website for The Consulting Club at JIIT featuring events, volunteer info, and club capabilities overview.',
     tech: ['Framer'],
-    link: '#',
+    link: 'https://theconsultingclub.framer.website/',
   },
   {
     title: 'Curie Temperature Alarm Project',
     description:
       'Simulates a ball dropping when Curie temperature is reached, using HTML, CSS, and JS.',
     tech: ['HTML', 'CSS', 'JS'],
-    link: '#',
+    link: 'https://pbl-phy.onrender.com/',
   },
 ];
 
