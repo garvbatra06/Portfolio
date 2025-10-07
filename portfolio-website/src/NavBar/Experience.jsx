@@ -6,7 +6,7 @@ const Experience = () => {
     <div className="experience-section">
   <div className="experience-card">
     <h3>Web Development Intern – CyberSapient</h3>
-    <p className="exp-date">June 2025 – Present</p>
+    <p className="exp-date">June 2025 – September 2025</p>
     <ul>
       <li>Working on dashboards using React + Tailwind</li>
       <li>Collaborating with design & backend API teams</li>
